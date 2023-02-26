@@ -5,11 +5,9 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.opacity = "1";
-    document.getElementById("floating-btn").style.opacity = "1";
+    document.getElementById("backToTop").style.opacity = "1";
   } else {
-    document.getElementById("myBtn").style.opacity = "0";
-    document.getElementById("floating-btn").style.opacity = "0";
+    document.getElementById("backToTop").style.opacity = "0";
   }
 }
 
@@ -24,12 +22,3 @@ function topFunction() {
     }
   }, 16); // how often to scroll (in milliseconds)
 }
-
-
-//Home Button
-const floatingBtn = document.getElementById("floating-btn");
-
-floatingBtn.addEventListener("click", function(event) {
-  event.preventDefault();
-  window.location.href = "https://sfinford.github.io/Home/";
-});

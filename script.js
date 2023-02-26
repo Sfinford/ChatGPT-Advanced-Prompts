@@ -22,3 +22,12 @@ function topFunction() {
     }
   }, 16); // how often to scroll (in milliseconds)
 }
+
+
+//Home Button
+const floatingBtn = document.getElementById("floating-btn");
+
+floatingBtn.addEventListener("click", function(event) {
+  event.preventDefault();
+  window.location.href = "https://www.example.com";
+});

@@ -66,5 +66,6 @@ header {
 }
 
 #headlink{
-  color: skyblue;;
+  color: white;
+  text-decoration: underline;;
 }
